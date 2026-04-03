@@ -1,0 +1,52 @@
+{
+  "offersHeadline": "Aktuelle Angebote",
+  "offersDescription": "Bearbeite diese Angebote zentral in dieser Datei und veröffentliche danach neu.",
+  "offers": [
+    {
+      "badge": "Beliebt",
+      "title": "Klasse B Kompaktpaket",
+      "description": "Schneller Einstieg mit klarer Struktur für Theorie und Praxis.",
+      "price": "ab 899 €",
+      "highlights": [
+        "Persönliche Betreuung",
+        "Flexible Fahrzeiten",
+        "Transparente Kosten"
+      ],
+      "ctaLabel": "Jetzt anfragen",
+      "ctaHref": "/anmeldung",
+      "image": "https://assets.ls-assets.com/provider/istock/1158973111.jpg?w=1200",
+      "imageAlt": "Klasse B Angebot"
+    },
+    {
+      "badge": "Neu",
+      "title": "B196 Schnellstart",
+      "description": "Ideal für alle, die 125er fahren möchten, ohne separate Prüfung.",
+      "price": "ab 799 €",
+      "highlights": [
+        "Strukturierte Schulung",
+        "Schneller Start",
+        "Moderne Fahrzeuge"
+      ],
+      "ctaLabel": "B196 anfragen",
+      "ctaHref": "/anmeldung",
+      "image": "https://assets.ls-assets.com/provider/istock/1752378092.jpg?w=1200",
+      "imageAlt": "B196 Angebot"
+    }
+  ],
+  "mediaTitle": "Fotos und Videos",
+  "mediaDescription": "Lade eigene Bilder und Videos in assets/uploads hoch und trage die Pfade hier ein.",
+  "mediaItems": [
+    {
+      "type": "image",
+      "src": "https://assets.ls-assets.com/provider/istock/2188546569.jpg?w=1200",
+      "alt": "Motorrad Ausbildung",
+      "caption": "Praxisnahe Ausbildung mit moderner Fahrzeugflotte"
+    },
+    {
+      "type": "image",
+      "src": "https://assets.ls-assets.com/provider/istock/2247823320.jpg?w=1200",
+      "alt": "Anhänger Ausbildung",
+      "caption": "Individuelle Begleitung bis zur Prüfung"
+    }
+  ]
+}

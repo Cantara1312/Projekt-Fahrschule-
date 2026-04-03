@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartphone Vorschau</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --accent: #0ea5e9;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 920px;
+      display: grid;
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+    .title {
+      margin: 0 0 6px 0;
+      font-size: 1.05rem;
+      color: white;
+    }
+    .sub {
+      margin: 0 0 14px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .phone {
+      width: 390px;
+      max-width: 100%;
+      margin: 0 auto;
+      border: 10px solid #0b0f1a;
+      border-radius: 26px;
+      overflow: hidden;
+      background: #000;
+    }
+    .phone img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .actions {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+    .btn-ghost {
+      border-color: #334155;
+      color: #cbd5e1;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">Smartphone Vorschau</h1>
+      <p class="sub">Hier siehst du die aktuelle mobile Ansicht deiner Startseite.</p>
+      <div class="phone">
+        <img src="./smartphone-preview-home.png" alt="Smartphone Vorschau der Startseite">
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="./index.html">Live-Seite öffnen</a>
+        <a class="btn btn-ghost" href="./smartphone-preview-home.png">Bild direkt öffnen</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

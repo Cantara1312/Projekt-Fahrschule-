@@ -1,0 +1,439 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="../assets/logo-city-fahrschule-gaildorf.png">
+<link rel="apple-touch-icon" type="image/png" href="../assets/logo-city-fahrschule-gaildorf.png">
+  <title>Datenschutz | Fahrschule City Gaildorf</title>
+<meta name="description" content="Fahrschule City Gaildorf - Datenschutz">
+  <style>
+    :root {
+    --accent-color: #1184D1;
+    --accent2-color: #0EA5E9;
+    --accent3-color: #1D4ED8;
+    --accent4-color: #7DD3FC;
+    --primary-color: #111827;
+    --dark-text-color: #111827;
+    --gray-text-color: #475569;
+    --button-padding-x: 32px;
+    --button-padding-y: 16px;
+    --font-family-body: Inter;
+    --light-text-color: #FFFFFF;
+    --dark-border-color: #111827;
+    --light-border-color: #D7E3F0;
+    --font-family-heading: Outfit;
+    --button-rounded-radius: 8px;
+    --dark-background-color: #0B1118;
+    --light-background-color: #F4F8FC;
+    --medium-background-color: #E7EFF7;
+    --primary-button-text-color: #FFFFFF;
+    --secondary-button-bg-color: #0B1118;
+    --secondary-button-text-color: #FFFFFF;
+    --primary-button-hover-bg-color: #070C11;
+    --primary-button-hover-text-color: #FFFFFF;
+    --secondary-button-hover-bg-color: #070C11;
+    --secondary-button-hover-text-color: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-family-body, Inter), sans-serif;
+      color: var(--dark-text-color, #1D1D1F);
+      background: var(--light-background-color, #F5F7FA);
+    }
+    img { max-width: 100%; height: auto; }
+    header, main, footer { overflow-x: clip; }
+    .code-section { overflow-x: clip; }
+    @media (max-width: 1024px) {
+      input, select, textarea {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 1024px) {
+      main [class*="lg:text-6xl"] { font-size: 2.8rem !important; line-height: 1.15 !important; }
+      main [class*="lg:text-5xl"] { font-size: 2.35rem !important; line-height: 1.18 !important; }
+      main [class*="py-20"] { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+      main [class*="lg:py-28"] { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+    }
+    @media (max-width: 640px) {
+      main [class*="text-6xl"] { font-size: 2.05rem !important; line-height: 1.15 !important; }
+      main [class*="text-5xl"] { font-size: 1.75rem !important; line-height: 1.2 !important; }
+      main [class*="text-4xl"] { font-size: 1.45rem !important; line-height: 1.25 !important; }
+      main [class*="py-20"] { padding-top: 3.25rem !important; padding-bottom: 3.25rem !important; }
+      main [class*="lg:py-28"] { padding-top: 3.75rem !important; padding-bottom: 3.75rem !important; }
+      main [class*="w-24"][class*="h-24"] { width: 4.25rem !important; height: 4.25rem !important; }
+      main [class*="w-20"][class*="h-20"] { width: 3.75rem !important; height: 3.75rem !important; }
+      main [class*="sm:flex-row"] > a.inline-flex,
+      main [class*="sm:flex-row"] > button.inline-flex {
+        width: 100%;
+      }
+      #global-header [data-landingsite-mobile-menu] a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 58px;
+      height: 58px;
+      border-radius: 9999px;
+      background: #25D366;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      z-index: 70;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: translateY(-2px);
+      background: #1EBE5A;
+    }
+    .whatsapp-float i {
+      font-size: 30px;
+      line-height: 1;
+    }
+    @media (max-width: 640px) {
+      .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        right: 14px;
+        bottom: 14px;
+      }
+      .whatsapp-float i { font-size: 28px; }
+    }
+  </style>
+</head>
+<body class="[font-family:var(--font-family-body)]">
+<header id="global-header" class="code-section">
+  <nav class="bg-white shadow-md fixed w-full z-50 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20 md:h-24">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="../index.html" class="flex items-center">
+            <img src="../assets/logo-city-fahrschule-gaildorf.png" alt="City Fahrschule Gaildorf Logo" class="h-20 md:h-24 w-auto" data-logo="">
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="../fuehrerscheinklassen/index.html" class="text-[#111827] hover:text-[#1184D1] font-semibold transition-colors duration-300">Führerscheinklassen</a>
+          <a href="../intensivkurs/index.html" class="text-[#111827] hover:text-[#1184D1] font-semibold transition-colors duration-300">Intensivkurs</a>
+          <a href="../preise/index.html" class="text-[#111827] hover:text-[#1184D1] font-semibold transition-colors duration-300">Preise</a>
+          <a href="../jobs/index.html" class="text-[#111827] hover:text-[#1184D1] font-semibold transition-colors duration-300">Jobs</a>
+          <a href="../ueber-uns/index.html" class="text-[#111827] hover:text-[#1184D1] font-semibold transition-colors duration-300">Über uns</a>
+          <a href="../kontakt/index.html" class="text-[#111827] hover:text-[#1184D1] font-semibold transition-colors duration-300">Kontakt</a>
+          <a href="../anmeldung/index.html" class="bg-[#111827] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#0B1220] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Platz sichern</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button data-landingsite-mobile-menu-toggle="" class="text-[#111827] hover:text-[#1184D1] p-2">
+            <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div data-landingsite-mobile-menu="" class="hidden lg:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-3">
+        <a href="../fuehrerscheinklassen/index.html" class="block text-[#111827] hover:text-[#1184D1] font-semibold py-2">Führerscheinklassen</a>
+        <a href="../intensivkurs/index.html" class="block text-[#111827] hover:text-[#1184D1] font-semibold py-2">Intensivkurs</a>
+        <a href="../preise/index.html" class="block text-[#111827] hover:text-[#1184D1] font-semibold py-2">Preise</a>
+        <a href="../jobs/index.html" class="block text-[#111827] hover:text-[#1184D1] font-semibold py-2">Jobs</a>
+        <a href="../ueber-uns/index.html" class="block text-[#111827] hover:text-[#1184D1] font-semibold py-2">Über uns</a>
+        <a href="../kontakt/index.html" class="block text-[#111827] hover:text-[#1184D1] font-semibold py-2">Kontakt</a>
+        <a href="../anmeldung/index.html" class="block bg-[#111827] text-white px-6 py-3 rounded-lg font-bold text-center hover:bg-[#0B1220] transition-all duration-300 mt-4">Platz sichern</a>
+      </div>
+    </div>
+  </nav>
+  <div class="h-20 md:h-24"></div>
+</header>
+
+<main>
+<section class="code-section bg-[#F5F7FA] py-20 lg:py-28">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-3xl shadow-xl border border-[#E8E8EA] p-8 lg:p-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-[#1D1D1F] mb-3" style="font-family: var(--font-family-heading);">Datenschutzerklärung</h1>
+      <p class="text-sm text-[#6C757D] mb-10">Stand: 03.04.2026</p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">1. Verantwortlicher</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        City Fahrschule Gaildorf GmbH<br>
+        Karlstr. 6<br>
+        74405 Gaildorf<br><br>
+        Vertreten durch: Herrn Salih Kolubüyük<br>
+        Telefon: +49 (0) 162 3745772<br>
+        E-Mail: info@fahrschule-gaildorf.de
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Wir verarbeiten personenbezogene Daten nur im Rahmen der gesetzlichen Vorgaben, insbesondere der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) und des Telekommunikation-Digitale-Dienste-Datenschutz-Gesetzes (TDDDG).<br>
+        Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">3. Hosting und Server-Log-Dateien</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Beim Aufruf unserer Website können durch den Hosting-Provider technische Zugriffsdaten (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene Seite, Browser, Betriebssystem) in Server-Log-Dateien verarbeitet werden.<br>
+        Die Verarbeitung erfolgt zur Gewährleistung von Stabilität und Sicherheit der Website (Art. 6 Abs. 1 lit. f DSGVO).<br>
+        Die Log-Daten werden nur so lange gespeichert, wie es für Sicherheits- und Nachweiszwecke erforderlich ist.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">4. Kontaktaufnahme (Telefon, E-Mail, Anmeldung)</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Wenn du uns kontaktierst (z. B. per Telefon, E-Mail oder über das Anmeldeformular), verarbeiten wir deine Angaben zur Bearbeitung deiner Anfrage und für Anschlussfragen.<br>
+        Im Anmeldeformular werden z. B. Name, Anschrift, Telefonnummer, E-Mail-Adresse und Führerscheinklasse abgefragt.<br>
+        Rechtsgrundlagen sind Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation), Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. f DSGVO (effiziente Bearbeitung von Anfragen).
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">5. WhatsApp-Kontakt</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Wenn du den WhatsApp-Button nutzt, wirst du zu WhatsApp weitergeleitet. Dabei können personenbezogene Daten (z. B. Telefonnummer, Kommunikationsinhalte, Meta-Daten) durch WhatsApp verarbeitet werden.<br>
+        Die Nutzung erfolgt freiwillig. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Nutzung).<br>
+        Es kann zu einer Übermittlung in Drittländer kommen.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">6. Externe Inhalte und Drittanbieter</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Auf dieser Website werden externe Dienste bzw. Inhalte genutzt (z. B. Google Fonts, Font Awesome, externe Bildquellen sowie Links zu Google-Diensten wie Rezensionen oder Karten).<br>
+        Dabei kann es technisch erforderlich sein, dass deine IP-Adresse an den jeweiligen Anbieter übermittelt wird.<br>
+        Rechtsgrundlagen sind Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionalen und einheitlichen Darstellung) sowie – soweit erforderlich – Art. 6 Abs. 1 lit. a DSGVO in Verbindung mit § 25 TDDDG.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">7. Cookies und ähnliche Technologien</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Soweit durch diese Website Informationen auf deiner Endeinrichtung gespeichert oder ausgelesen werden, erfolgt dies ausschlie&szlig;lich im Rahmen der gesetzlichen Vorgaben des § 25 TDDDG.<br>
+        Nicht technisch erforderliche Cookies/Technologien dürfen nur mit deiner Einwilligung eingesetzt werden.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">8. Empfänger personenbezogener Daten</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Eine Weitergabe erfolgt nur, wenn sie rechtlich zulässig ist. Empfänger können insbesondere technische Dienstleister (Hosting, IT), Kommunikationsdienste sowie ggf. öffentliche Stellen bei gesetzlicher Verpflichtung sein.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">9. Drittlandübermittlung</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Sofern Daten an Anbieter mit Sitz au&szlig;erhalb der EU/des EWR übermittelt werden, erfolgt dies nur unter Beachtung der Art. 44 ff. DSGVO (z. B. Angemessenheitsbeschluss oder geeignete Garantien wie Standardvertragsklauseln).
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">10. Speicherdauer</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Wir speichern personenbezogene Daten nur so lange, wie es für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.<br>
+        Daten aus Anfragen werden gelöscht, sobald die Bearbeitung abgeschlossen ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">11. Deine Rechte</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Du hast nach Ma&szlig;gabe der DSGVO insbesondere folgende Rechte: Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO), Widerspruch (Art. 21 DSGVO) sowie Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO).
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">12. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Du hast gemä&szlig; Art. 77 DSGVO das Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde.<br>
+        Zuständig für Baden-Württemberg ist:<br><br>
+        Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
+        Postfach 10 29 32, 70025 Stuttgart<br>
+        oder: Heilbronner Stra&szlig;e 35, 70191 Stuttgart<br>
+        E-Mail: poststelle@lfdi.bwl.de<br>
+        Website: https://www.baden-wuerttemberg.datenschutz.de
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">13. Pflicht zur Bereitstellung von Daten</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Die Bereitstellung personenbezogener Daten ist grundsätzlich freiwillig. Bestimmte Angaben können jedoch erforderlich sein, damit wir deine Anfrage bearbeiten oder einen Vertrag anbahnen bzw. durchführen können.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">14. Automatisierte Entscheidungsfindung</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Eine ausschlie&szlig;lich automatisierte Entscheidungsfindung einschlie&szlig;lich Profiling im Sinne von Art. 22 DSGVO findet nicht statt.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">15. Datensicherheit</h2>
+      <p class="text-[#1D1D1F] leading-relaxed mb-8">
+        Wir treffen angemessene technische und organisatorische Ma&szlig;nahmen, um deine Daten gegen Verlust, Missbrauch und unbefugten Zugriff zu schützen.
+      </p>
+
+      <h2 class="text-2xl font-bold text-[#0F172A] mb-3">16. Aktualisierung dieser Datenschutzerklärung</h2>
+      <p class="text-[#1D1D1F] leading-relaxed">
+        Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder Änderungen unserer Leistungen abbildet.
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="global-footer" class="code-section bg-[#0F172A] text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <!-- Logo & About -->
+      <div class="lg:col-span-1">
+        <a href="../index.html" class="flex items-center mb-6">
+          <img src="../assets/logo-city-fahrschule-gaildorf.png" alt="City Fahrschule Gaildorf Logo" class="h-16 w-auto" data-logo="">
+        </a>
+        <p class="text-white/70 mb-6">
+          Deine persönliche Fahrschule in Gaildorf &amp; Michelfeld. Schnell,
+          fair und ohne Wartezeiten zum Führerschein.
+        </p>
+        <div class="flex space-x-4">
+          <a href="../kontakt/index.html" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#0EA5E9] transition-colors">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="../kontakt/index.html" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#0EA5E9] transition-colors">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-bold mb-6">Führerscheinklassen</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="../fuehrerscheinklassen/klasse-b/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Klasse B – Auto</a>
+          </li>
+          <li>
+            <a href="../fuehrerscheinklassen/klasse-be/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Klasse BE – Anhänger</a>
+          </li>
+          <li>
+            <a href="../fuehrerscheinklassen/klasse-a/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Klasse A – Motorrad</a>
+          </li>
+          <li>
+            <a href="../fuehrerscheinklassen/b196/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">B196 – Erweiterung</a>
+          </li>
+          <li>
+            <a href="../fuehrerscheinklassen/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Alle Klassen</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Important Links -->
+      <div>
+        <h4 class="text-lg font-bold mb-6">Wichtig</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="../preise/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Preise</a>
+          </li>
+          <li>
+            <a href="../intensivkurs/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Intensivkurs</a>
+          </li>
+          <li>
+            <a href="../angebote/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Angebote</a>
+          </li>
+          <li>
+            <a href="../standorte/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">Standorte</a>
+          </li>
+          <li>
+            <a href="../faq/index.html" class="text-white/70 hover:text-[#0EA5E9] transition-colors">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-lg font-bold mb-6">Kontakt</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-phone text-[#0EA5E9] mt-1" aria-hidden="true"></i>
+            <a href="tel:01623745772" class="text-white/70 hover:text-[#0EA5E9] transition-colors">0162 3745772</a>
+          </li>
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-map-marker-alt text-[#0EA5E9] mt-1" aria-hidden="true"></i>
+            <div class="text-white/70">
+              <p>Karlstra&szlig;e 6</p>
+              <p>74405 Gaildorf</p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-clock text-[#0EA5E9] mt-1" aria-hidden="true"></i>
+            <div class="text-white/70">
+              <p>Mo–Fr: 07:30 – 19:30</p>
+              <p>Sa: 07:30 – 17:00</p>
+            </div>
+          </li>
+        </ul>
+        <a href="../kontakt/index.html" class="mt-6 inline-flex items-center bg-[#0EA5E9] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#0284C7] transition-all duration-300">
+          Kontakt <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p class="text-white/50 text-sm">
+          © 2026 Fahrschule City Gaildorf. Alle Rechte vorbehalten.
+        </p>
+        <div class="flex space-x-6 text-sm">
+          <a href="../impressum/index.html" class="text-white/50 hover:text-white transition-colors">Impressum</a>
+          <a href="index.html" class="text-white/50 hover:text-white transition-colors">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/491623745772?text=Hallo%20City%20Fahrschule%20Gaildorf%2C%20ich%20habe%20eine%20Frage%20zur%20Anmeldung." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp Kontakt öffnen" title="WhatsApp">
+  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<script>
+  (() => {
+    const button = document.querySelector('[data-landingsite-mobile-menu-toggle]');
+    const menu = document.querySelector('[data-landingsite-mobile-menu]');
+    if (button && menu) {
+      button.addEventListener('click', () => menu.classList.toggle('hidden'));
+      menu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => menu.classList.add('hidden'));
+      });
+    }
+
+    const form = document.getElementById('anmeldung-form');
+    if (!form) return;
+
+    const feedback = document.getElementById('anmeldung-feedback');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const formData = new FormData(form);
+      const bodyLines = [
+        'Neue Anmeldung über die Webseite',
+        '',
+        'Name: ' + (formData.get('name') || ''),
+        'Anschrift: ' + (formData.get('anschrift') || ''),
+        'Telefonnummer: ' + (formData.get('telefon') || ''),
+        'E-Mail: ' + (formData.get('email') || ''),
+        'Führerscheinklasse: ' + (formData.get('fuehrerscheinklasse') || ''),
+        'Nachricht: ' + (formData.get('nachricht') || '')
+      ];
+
+      const subject = encodeURIComponent('Neue Anmeldung - Fahrschule City Gaildorf');
+      const body = encodeURIComponent(bodyLines.join('\n'));
+      window.location.href = 'mailto:info@fahrschule-gaildorf.de?subject=' + subject + '&body=' + body;
+
+      if (feedback) {
+        feedback.textContent = 'Vielen Dank. Dein E-Mail-Programm wurde mit den eingegebenen Daten geöffnet.';
+        feedback.classList.remove('hidden');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
