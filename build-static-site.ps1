@@ -1227,6 +1227,13 @@ function Apply-TextCorrections {
     $output = $output.Replace($rule.From, $rule.To)
   }
 
+  # Keep this sales-tip block removed across all generated pages.
+  $output = [regex]::Replace(
+    $output,
+    '(?s)<p class="mt-10 text-lg text-white/70">\s*💡\s*<strong>Brutal ehrlicher Pro-Tipp:</strong>.*?</p>',
+    ''
+  )
+
   return $output
 }
 
@@ -1536,12 +1543,39 @@ $footerHtml
         'Nachricht: ' + (formData.get('nachricht') || '')
       ];
 
-      const subject = encodeURIComponent('Neue Anmeldung - Fahrschule City Gaildorf');
-      const body = encodeURIComponent(bodyLines.join('\n'));
-      window.location.href = 'mailto:${contactEmail}?subject=' + subject + '&body=' + body;
+      const recipient = '${contactEmail}';
+      const subjectText = 'Neue Anmeldung - Fahrschule City Gaildorf';
+      const bodyText = bodyLines.join('\n');
+      const encodedSubject = encodeURIComponent(subjectText);
+      const encodedBody = encodeURIComponent(bodyText);
+      const encodedRecipient = encodeURIComponent(recipient);
+
+      const choice = window.prompt(
+        'Bitte wähle deinen E-Mail-Dienst:\n1 = Gmail\n2 = Outlook\n3 = Web/Sonstiges\n4 = Standard-Mail-App\n\nTipp: Bei Abbrechen wird nichts gesendet.',
+        '4'
+      );
+
+      if (choice === null) {
+        if (feedback) {
+          feedback.textContent = 'Versand abgebrochen.';
+          feedback.classList.remove('hidden');
+        }
+        return;
+      }
+
+      const normalizedChoice = choice.trim().toLowerCase();
+      if (normalizedChoice === '1' || normalizedChoice === 'gmail') {
+        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodedRecipient + '&su=' + encodedSubject + '&body=' + encodedBody;
+      } else if (normalizedChoice === '2' || normalizedChoice === 'outlook') {
+        window.location.href = 'https://outlook.live.com/mail/0/deeplink/compose?to=' + encodedRecipient + '&subject=' + encodedSubject + '&body=' + encodedBody;
+      } else if (normalizedChoice === '3' || normalizedChoice === 'web' || normalizedChoice === 'web.de' || normalizedChoice === 'webde' || normalizedChoice === 'sonstiges') {
+        window.location.href = 'mailto:' + recipient + '?subject=' + encodedSubject + '&body=' + encodedBody;
+      } else {
+        window.location.href = 'mailto:' + recipient + '?subject=' + encodedSubject + '&body=' + encodedBody;
+      }
 
       if (feedback) {
-        feedback.textContent = 'Vielen Dank. Dein E-Mail-Programm wurde mit den eingegebenen Daten geöffnet.';
+        feedback.textContent = 'Dein ausgewählter E-Mail-Dienst wurde geöffnet.';
         feedback.classList.remove('hidden');
       }
     });

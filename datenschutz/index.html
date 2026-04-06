@@ -169,7 +169,7 @@
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="bg-white rounded-3xl shadow-xl border border-[#E8E8EA] p-8 lg:p-12">
       <h1 class="text-3xl md:text-4xl font-bold text-[#1D1D1F] mb-3" style="font-family: var(--font-family-heading);">Datenschutzerklärung</h1>
-      <p class="text-sm text-[#6C757D] mb-10">Stand: 03.04.2026</p>
+      <p class="text-sm text-[#6C757D] mb-10">Stand: 06.04.2026</p>
 
       <h2 class="text-2xl font-bold text-[#0F172A] mb-3">1. Verantwortlicher</h2>
       <p class="text-[#1D1D1F] leading-relaxed mb-8">
@@ -424,12 +424,39 @@
         'Nachricht: ' + (formData.get('nachricht') || '')
       ];
 
-      const subject = encodeURIComponent('Neue Anmeldung - Fahrschule City Gaildorf');
-      const body = encodeURIComponent(bodyLines.join('\n'));
-      window.location.href = 'mailto:info@fahrschule-gaildorf.de?subject=' + subject + '&body=' + body;
+      const recipient = 'info@fahrschule-gaildorf.de';
+      const subjectText = 'Neue Anmeldung - Fahrschule City Gaildorf';
+      const bodyText = bodyLines.join('\n');
+      const encodedSubject = encodeURIComponent(subjectText);
+      const encodedBody = encodeURIComponent(bodyText);
+      const encodedRecipient = encodeURIComponent(recipient);
+
+      const choice = window.prompt(
+        'Bitte wähle deinen E-Mail-Dienst:\n1 = Gmail\n2 = Outlook\n3 = Web/Sonstiges\n4 = Standard-Mail-App\n\nTipp: Bei Abbrechen wird nichts gesendet.',
+        '4'
+      );
+
+      if (choice === null) {
+        if (feedback) {
+          feedback.textContent = 'Versand abgebrochen.';
+          feedback.classList.remove('hidden');
+        }
+        return;
+      }
+
+      const normalizedChoice = choice.trim().toLowerCase();
+      if (normalizedChoice === '1' || normalizedChoice === 'gmail') {
+        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodedRecipient + '&su=' + encodedSubject + '&body=' + encodedBody;
+      } else if (normalizedChoice === '2' || normalizedChoice === 'outlook') {
+        window.location.href = 'https://outlook.live.com/mail/0/deeplink/compose?to=' + encodedRecipient + '&subject=' + encodedSubject + '&body=' + encodedBody;
+      } else if (normalizedChoice === '3' || normalizedChoice === 'web' || normalizedChoice === 'web.de' || normalizedChoice === 'webde' || normalizedChoice === 'sonstiges') {
+        window.location.href = 'mailto:' + recipient + '?subject=' + encodedSubject + '&body=' + encodedBody;
+      } else {
+        window.location.href = 'mailto:' + recipient + '?subject=' + encodedSubject + '&body=' + encodedBody;
+      }
 
       if (feedback) {
-        feedback.textContent = 'Vielen Dank. Dein E-Mail-Programm wurde mit den eingegebenen Daten geöffnet.';
+        feedback.textContent = 'Dein ausgewählter E-Mail-Dienst wurde geöffnet.';
         feedback.classList.remove('hidden');
       }
     });
